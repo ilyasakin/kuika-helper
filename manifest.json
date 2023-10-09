@@ -9,31 +9,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://try.kuika.com/*",
-                "https://alpha.kuika.com/*",
-                "https://beta.kuika.com/*",
-                "https://preprod.kuika.com/*",
-                "https://platform.kuika.com/*",
-                "https://test1.kuika.com/*",
-                "https://test2.kuika.com/*",
-                "https://test3.kuika.com/*",
-                "https://test4.kuika.com/*",
-                "https://test5.kuika.com/*",
-                "https://test6.kuika.com/*",
-                "https://test7.kuika.com/*",
-                "https://test8.kuika.com/*",
-                "https://test9.kuika.com/*",
-                "https://test10.kuika.com/*",
-                "https://dev1.kuika.com/*",
-                "https://dev2.kuika.com/*",
-                "https://dev3.kuika.com/*",
-                "https://dev4.kuika.com/*",
-                "https://dev5.kuika.com/*",
-                "https://dev6.kuika.com/*",
-                "https://dev7.kuika.com/*",
-                "https://dev8.kuika.com/*",
-                "https://dev9.kuika.com/*",
-                "https://dev10.kuika.com/*",
+                "https://*.kuika.com/*",
                 "http://localhost:3000/*"
             ],
             "js": [

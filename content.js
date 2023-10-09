@@ -6,26 +6,8 @@ const TAGS = [
   '[PREPROD]',
   '[TRY]',
   '[DEMO]',
-  '[DEV1]',
-  '[DEV2]',
-  '[DEV3]',
-  '[DEV4]',
-  '[DEV5]',
-  '[DEV6]',
-  '[DEV7]',
-  '[DEV8]',
-  '[DEV9]',
-  '[DEV10]',
-  '[TEST1]',
-  '[TEST2]',
-  '[TEST3]',
-  '[TEST4]',
-  '[TEST5]',
-  '[TEST6]',
-  '[TEST7]',
-  '[TEST8]',
-  '[TEST9]',
-  '[TEST10]',
+  '[DEV',
+  '[TEST',
 ];
 const TEST_URL_REGEX = /https:\/\/test[0-9]*.kuika.com/;
 const DEV_URL_REGEX = /https:\/\/dev[0-9]*.kuika.com/;
@@ -66,7 +48,7 @@ handleTitleChange();
 const target = document.querySelector('title');
 const observer = new MutationObserver((mutations) => {
   mutations.forEach((mutation) => {
-    if (!TAGS.some((tag) => mutation.target.innerText.includes(tag))) {
+    if (!TAGS.some((tag) => mutation.target.innerText.startsWith(tag))) {
       handleTitleChange();
     }
   });
