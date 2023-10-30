@@ -10,7 +10,7 @@ const TAGS = [
   '[TEST',
 ];
 const TEST_URL_REGEX = /https:\/\/test[0-9]*.kuika.com/;
-const DEV_URL_REGEX = /https:\/\/dev[0-9]*.kuika.com/;
+const DEV_URL_REGEX = /https:\/\/designerdev[0-9]*.kuika.com/;
 
 const handleTitleChange = () => {
   if (location.origin === 'https://alpha.kuika.com') {
