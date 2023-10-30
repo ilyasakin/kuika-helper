@@ -6,7 +6,7 @@ const TAGS = [
   '[PREPROD]',
   '[TRY]',
   '[DEMO]',
-  '[DEV',
+  '[DESIGNERDEV',
   '[TEST',
 ];
 const TEST_URL_REGEX = /https:\/\/test[0-9]*.kuika.com/;
